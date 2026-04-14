@@ -5,8 +5,8 @@ export default function About() {
   const headerRef = useScrollAnimation({ once: false, exitAnimation: true });
   const mainRef = useScrollAnimation({ once: false, exitAnimation: true });
   const featureRefs = [
-    useScrollAnimation({ once: false, exitAnimation: true }),
-    useScrollAnimation({ once: false, exitAnimation: true }),
+    useScrollAnimation({ once: true, exitAnimation: true }),
+    useScrollAnimation({ once: true, exitAnimation: true }),
     useScrollAnimation({ once: false, exitAnimation: true }),
     useScrollAnimation({ once: false, exitAnimation: true })
   ];

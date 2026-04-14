@@ -37,7 +37,7 @@ export default function Hero() {
         <div className="hero-details fade-in-up stagger-3" ref={detailsRef}>
           <div className="detail-item">
             <span className="label">Date</span>
-            <span className="value">May 15, 2024</span>
+            <span className="value">Not Announced</span>
           </div>
           <div className="detail-item">
             <span className="label">Venue</span>
