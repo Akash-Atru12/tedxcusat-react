@@ -3,7 +3,7 @@ import './navbar.css';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
 
 export default function Navbar() {
-  const brandRef = useScrollAnimation({ once: false, exitAnimation: true });
+  const brandRef = useScrollAnimation({ once: true, exitAnimation: true });
   const [isOpen, setIsOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
@@ -14,7 +14,6 @@ export default function Navbar() {
       const currentScrollY = window.scrollY;
       const scrollDelta = Math.abs(currentScrollY - lastScrollY);
       
-      // Clear existing timeout
       if (scrollTimeout) {
         clearTimeout(scrollTimeout);
       }
