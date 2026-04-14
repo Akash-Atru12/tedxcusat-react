@@ -1,0 +1,118 @@
+.about {
+  background-color: var(--tedx-dark);
+  padding: var(--spacing-xl) 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: var(--spacing-lg);
+}
+
+.about-header h2 {
+  font-size: var(--font-size-3xl);
+  margin-bottom: var(--spacing-md);
+  color: var(--tedx-light);
+}
+
+.accent-line {
+  width: 80px;
+  height: 5px;
+  background-color: var(--tedx-red);
+  margin: 0 auto;
+  border-radius: 3px;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-xl);
+  align-items: start;
+}
+
+.about-main {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.lead-text {
+  font-size: var(--font-size-lg);
+  color: var(--tedx-red);
+  font-weight: 600;
+  line-height: 1.8;
+}
+
+.about-main p {
+  color: #cfcfcf;
+  line-height: 1.8;
+  font-size: var(--font-size-base);
+}
+
+.about-features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-md);
+}
+
+.feature-card {
+  background: var(--tedx-gray);
+  padding: var(--spacing-md);
+  border-radius: 8px;
+  border-left: 4px solid var(--tedx-red);
+  transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(255, 0, 0, 0.1);
+}
+
+.feature-icon {
+  font-size: 32px;
+  margin-bottom: var(--spacing-sm);
+  display: inline-block;
+}
+
+.feature-card h3 {
+  font-size: var(--font-size-lg);
+  margin-bottom: var(--spacing-sm);
+  color: var(--tedx-dark);
+}
+
+.feature-card p {
+  font-size: var(--font-size-sm);
+  color: #666;
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+  }
+
+  .about-features {
+    grid-template-columns: 1fr;
+  }
+
+  .about-header h2 {
+    font-size: var(--font-size-2xl);
+  }
+}
+
+@media (max-width: 480px) {
+  .about {
+    padding: var(--spacing-lg) 0;
+  }
+
+  .lead-text {
+    font-size: var(--font-size-base);
+  }
+}

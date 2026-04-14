@@ -1,0 +1,131 @@
+.cta-section {
+  background: linear-gradient(135deg, var(--tedx-dark) 0%, #2a2a2a 100%);
+  color: var(--tedx-light);
+  padding: var(--spacing-xl) 0;
+  position: relative;
+  overflow: hidden;
+  height: 650px;
+}
+
+.cta-section::before {
+  content: '';
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background-color: var(--tedx-red);
+  opacity: 0.05;
+  border-radius: 50%;
+  bottom: -100px;
+  right: -100px;
+  animation: float-reverse 8s ease-in-out infinite;
+}
+
+@keyframes float-reverse {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-30px); }
+}
+
+.cta-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+  position: relative;
+  z-index: 2;
+}
+
+.cta-content {
+  text-align: center;
+  padding-top: 50px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.cta-section h2 {
+  font-size: var(--font-size-4xl);
+  margin-bottom: var(--spacing-md);
+  font-family: var(--font-heading);
+}
+
+.cta-subtitle {
+  font-size: var(--font-size-xl);
+  color: var(--tedx-red);
+  margin-bottom: var(--spacing-lg);
+}
+
+.register-btn {
+  padding: 18px 60px;
+  background: var(--tedx-red);
+  color: var(--tedx-light);
+  border: none;
+  border-radius: 8px;
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  font-family: var(--font-family);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 20px rgba(227, 27, 35, 0.4);
+  margin-bottom: var(--spacing-lg);
+  display: inline-block;
+}
+
+.register-btn:hover {
+  background: #c91520;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(227, 27, 35, 0.5);
+}
+
+.register-btn:active {
+  transform: translateY(-1px);
+}
+
+.cta-note {
+  font-size: var(--font-size-lg);
+  color: #ff9999;
+  font-weight: 600;
+  margin-bottom: 0;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+@media (max-width: 768px) {
+  .cta-section h2 {
+    font-size: var(--font-size-3xl);
+  }
+
+  .cta-subtitle {
+    font-size: var(--font-size-lg);
+  }
+
+  .register-btn {
+    padding: 16px 48px;
+    font-size: var(--font-size-lg);
+  }
+}
+
+@media (max-width: 480px) {
+  .cta-section {
+    padding: var(--spacing-lg) 0;
+  }
+  .cta-content {
+    padding-top: 120px;
+  }
+
+  .cta-section h2 {
+    font-size: var(--font-size-2xl);
+  }
+
+  .cta-subtitle {
+    font-size: var(--font-size-base);
+  }
+
+  .register-btn {
+    padding: 14px 36px;
+    font-size: var(--font-size-base);
+  }
+}
+
+
