@@ -4,7 +4,7 @@ import { useScrollAnimation } from '../hooks/useScrollAnimation';
 export default function CTA() {
   const contentRef = useScrollAnimation({ once: false, exitAnimation: true });
   const titleRef = useScrollAnimation({ once: false, exitAnimation: true });
-  const buttonRef = useScrollAnimation({ once: false, exitAnimation: true });
+  const buttonRef = useScrollAnimation({ once: true, exitAnimation: true });
 
   const handleRegisterClick = () => {
     alert('Thank you for your interest! Registration will open soon.');
