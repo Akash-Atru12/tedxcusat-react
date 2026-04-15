@@ -6,7 +6,6 @@ import Hero from './components/hero'
 import About from './components/about'
 import Speaker from './components/speaker'
 import CTA from './components/CTA'
-
 function App() {
   const [showContent, setShowContent] = useState(false);
 

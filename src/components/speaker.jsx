@@ -4,9 +4,9 @@ import { useScrollAnimation } from '../hooks/useScrollAnimation';
 export default function Speaker() {
   const headerRef = useScrollAnimation({ once: false, exitAnimation: true });
   const speakerRefs = [
-    useScrollAnimation({ once: false, exitAnimation: true }),
-    useScrollAnimation({ once: false, exitAnimation: true }),
-    useScrollAnimation({ once: false, exitAnimation: true })
+    useScrollAnimation({ once: true, exitAnimation: true }),
+    useScrollAnimation({ once: true, exitAnimation: true }),
+    useScrollAnimation({ once: true, exitAnimation: true })
   ];
 
   const speakers = [

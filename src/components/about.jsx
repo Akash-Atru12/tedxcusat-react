@@ -7,8 +7,8 @@ export default function About() {
   const featureRefs = [
     useScrollAnimation({ once: true, exitAnimation: true }),
     useScrollAnimation({ once: true, exitAnimation: true }),
-    useScrollAnimation({ once: false, exitAnimation: true }),
-    useScrollAnimation({ once: false, exitAnimation: true })
+    useScrollAnimation({ once: true, exitAnimation: true }),
+    useScrollAnimation({ once: true, exitAnimation: true })
   ];
 
   return (
