@@ -1,5 +1,5 @@
 .hero {
-  background: linear-gradient(135deg, var(--tedx-dark) 0%, #2a2a2a 100%);
+  background: transparent;
   color: var(--tedx-light);
   padding: 160px var(--spacing-md) 120px;
   margin-top:-90px;

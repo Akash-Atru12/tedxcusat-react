@@ -1,5 +1,4 @@
 .html,body{
-  background-color: black;
   color: white;
 }
 :root {
@@ -44,7 +43,7 @@ html, body {
 
 body {
   font-family: var(--font-family);
-  background-color: var(--tedx-light);
+  background:black;
   color: var(--tedx-dark);
   line-height: 1.6;
   overflow-x: hidden;

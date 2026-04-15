@@ -54,11 +54,11 @@ export default function Hero() {
         </button>
       </div>
 
-      <div className="hero-visual fade-in-right" ref={visualRef}>
+    {/* <div className="hero-visual fade-in-right" ref={visualRef}>
         <div className="circle circle-1"></div>
         <div className="circle circle-2"></div>
         <div className="circle circle-3"></div>
-      </div>
+      </div> */}
     </section>
   );
 }

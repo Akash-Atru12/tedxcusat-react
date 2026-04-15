@@ -1,5 +1,5 @@
 .about {
-  background-color: var(--tedx-dark);
+  background-color: transparent;
   padding: var(--spacing-xl) 0;
   border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
@@ -51,6 +51,8 @@
 
 .about-main p {
   color: #cfcfcf;
+  border-radius: 6px;
+  border-color: black;
   line-height: 1.8;
   font-size: var(--font-size-base);
 }
