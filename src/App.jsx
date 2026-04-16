@@ -61,12 +61,12 @@ function App() {
 
       if (isMobile) {
         // 🔥 MOBILE: bottom-center + smaller robot
-        c.top = 76        // bottom position
+        c.top = 75        // bottom position
         c.left = 50       // center horizontally
         c.scale = 0.45    // smaller size
         c.opacity = 0.9   // slight fade
       } else {
-        // 💻 DESKTOP: normal animation
+  
         c.top = lerp(c.top, t.top, SPEED)
         c.left = lerp(c.left, t.left, SPEED)
         c.scale = lerp(c.scale, t.scale, SPEED)
