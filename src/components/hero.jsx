@@ -4,7 +4,7 @@ import { useScrollAnimation } from '../hooks/useScrollAnimation';
 export default function Hero() {
   const titleRef = useScrollAnimation({ once: false, exitAnimation: true });
   const contentRef = useScrollAnimation({ once: false, exitAnimation: true });
-  const detailsRef = useScrollAnimation({ once: false, exitAnimation: true });
+  const detailsRef = useScrollAnimation({ once: true, exitAnimation: true });
   const buttonRef = useScrollAnimation({ once: true });
   const visualRef = useScrollAnimation({ once: false, exitAnimation: true });
 
